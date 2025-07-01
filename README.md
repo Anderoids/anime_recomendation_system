@@ -1,24 +1,28 @@
-# 🎌 Anime Recommendation System in Python 
-
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
 ![Status](https://img.shields.io/badge/status-active-success)
+![License](https://img.shields.io/github/license/Anderoids/anime_recomendation_system?color=blue)
 
-> A hybrid anime recommender using Content-Based + Collaborative Filtering in Python.
+>  A hybrid anime recommender using Content-Based + Collaborative Filtering in Python.
 
-Welcome to the **Anime Recommendation System** project!  
-This intelligent system recommends anime to users using a **hybrid approach** combining:
+---
 
-- 🎨 **Content-Based Filtering (CBF)** using TF-IDF & Cosine Similarity  
-- 📈 **Collaborative Filtering (CF)** using Surprise’s SVD  
-- 🧠 **Hybrid Recommendation System** that adapts based on user history  
-- 📊 **Interactive Dashboard** with `ipywidgets` and visualizations  
-- 🔥 **Top-5 Visualized Recommendations** per user or anime title
+## 📌 Table of Contents
+
+- [📌 Table of Contents](#-table-of-contents)
+- [📂 Dataset](#dataset)
+- [🚀 Features](#features)
+- [🛠️ Installation](#installation)
+- [▶️ How to Run](#how-to-run)
+- [📊 Visualizations](#visualizations)
+- [📜 Credits](#credits)
+- [📄 License](#license)
+- [💌 Contact](#contact)
 
 ---
 
 ## 📂 Dataset
 
-We use the **Anime Recommendation Database** (from [MyAnimeList](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)) consisting of:
+> We use the **Anime Recommendation Database** (from [MyAnimeList on Kaggle](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)) consisting of:
 
 - `anime.csv` — metadata of ~12K anime
 - `rating.csv` — ~7.8M user-anime interactions
@@ -26,7 +30,6 @@ We use the **Anime Recommendation Database** (from [MyAnimeList](https://www.kag
 ---
 
 ## 🚀 Features
-
 ### ✅ Data Preprocessing
 - Removed duplicates and missing values
 - Cleaned genres, converted to lowercase and unified format
@@ -56,23 +59,38 @@ We use the **Anime Recommendation Database** (from [MyAnimeList](https://www.kag
 - Uses `ipywidgets` for user input
 - Dynamic visual output
 - Fully integrated with CF/CBF models
-
 ---
 
-## 🛠️ How to Run
+## 🛠️ Installation
 
-### ⚙️ Environment Setup
+Install dependencies:
 
 ```bash
-pip install pandas numpy seaborn matplotlib scikit-learn ipywidgets wordcloud surprise
----
+pip install -r requirements.txt
+▶️ How to Run
+📒 Jupyter Notebook
+bash
+Copy
+Edit
+jupyter notebook your_notebook_name.ipynb
+🖥️ Streamlit App (if applicable)
+bash
+Copy
+Edit
+streamlit run app.py
+📊 Visualizations
+Feature	Description
+📈 Bar Charts	Top-rated items
+📉 Histograms	User rating distribution
+📌 Interactive Widgets	User ID & Anime input
+📍 Hybrid Output	Personalized + Similar titles
 
-Credits
-Dataset: Kaggle - Anime Recommendation Database
----
+📜 Credits
+Dataset: Dataset Name - Kaggle
 
-Libraries: pandas, scikit-learn, surprise, ipywidgets, seaborn, matplotlib, wordcloud
----
+Libraries: pandas, numpy, matplotlib, surprise, seaborn, streamlit, etc.
 
-## License
-This project is licensed under the MIT License
+Creator: Guduru Manasa
+
+📄 License
+This project is licensed under the MIT License — see the LICENSE file for details.
