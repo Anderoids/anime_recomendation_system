@@ -1,14 +1,15 @@
+# 🎌 Anime Recommendation System in Python
+
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
 ![Status](https://img.shields.io/badge/status-active-success)
-![License](https://img.shields.io/github/license/Anderoids/anime_recomendation_system?color=blue)
+![License](https://img.shields.io/github/license/Anderoids/anime_recommendation_system?color=blue)
 
->  A hybrid anime recommender using Content-Based + Collaborative Filtering in Python.
+> A hybrid anime recommender using Content-Based and Collaborative Filtering in Python.
 
 ---
 
 ## 📌 Table of Contents
 
-- [📌 Table of Contents](#-table-of-contents)
 - [📂 Dataset](#dataset)
 - [🚀 Features](#features)
 - [🛠️ Installation](#installation)
@@ -22,75 +23,53 @@
 
 ## 📂 Dataset
 
-> We use the **Anime Recommendation Database** (from [MyAnimeList on Kaggle](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)) consisting of:
+We use the **Anime Recommendation Database** from [MyAnimeList on Kaggle](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database), which includes:
 
-- `anime.csv` — metadata of ~12K anime
-- `rating.csv` — ~7.8M user-anime interactions
+- `anime.csv` — metadata of ~12,000 anime
+- `rating.csv` — ~7.8 million user-anime interactions
 
 ---
 
 ## 🚀 Features
+
 ### ✅ Data Preprocessing
-- Removed duplicates and missing values
-- Cleaned genres, converted to lowercase and unified format
+- Removed missing values and duplicates
+- Cleaned and standardized genre data
 - Normalized ratings using `MinMaxScaler`
 
 ### 🧠 Content-Based Filtering (CBF)
-- TF-IDF Vectorization of genres
-- Cosine similarity matrix for finding similar anime
-- Function: `recommend_anime("Naruto", anime_df, cosine_sim)`
+- Uses TF-IDF and cosine similarity on genre text
+- Recommends similar anime based on selected title
 
 ### 👥 Collaborative Filtering (CF)
-- Matrix factorization with `SVD` from `Surprise`
-- Trained on user-item interactions
-- Function: `get_top_recommendations(user_id, model, anime_df, n=5)`
+- Uses SVD (Singular Value Decomposition) from the `Surprise` library
+- Learns user preferences from past ratings
 
 ### 🔗 Hybrid Recommendation System
-- Combines CF (if user history exists) and CBF (cold-start fallback)
-- Function: `hybrid_recommend(user_id, anime_name, n=5)`
+- Combines CBF and CF based on user history
+- Falls back to CBF for new users (cold start)
 
 ### 📊 Visualizations
-- Bar plot of top-rated anime
-- User rating distribution histogram
-- Ranked hybrid recommendations bar chart
-- Function: `plot_top_5_recommendations(user_id, anime_name, n=5)`
+- Bar charts of top-rated anime
+- Histograms of user rating distribution
+- Interactive recommendation widgets in Jupyter
 
-### 🧩 Interactive Dashboard (Jupyter Notebook)
-- Uses `ipywidgets` for user input
-- Dynamic visual output
-- Fully integrated with CF/CBF models
 ---
 
 ## 🛠️ Installation
 
-Install dependencies:
+Install required packages:
 
 ```bash
 pip install -r requirements.txt
-▶️ How to Run
-📒 Jupyter Notebook
-bash
-Copy
-Edit
-jupyter notebook your_notebook_name.ipynb
-🖥️ Streamlit App (if applicable)
-bash
-Copy
-Edit
-streamlit run app.py
-📊 Visualizations
-Feature	Description
-📈 Bar Charts	Top-rated items
-📉 Histograms	User rating distribution
-📌 Interactive Widgets	User ID & Anime input
-📍 Hybrid Output	Personalized + Similar titles
 
-📜 Credits
-Dataset: Dataset Name - Kaggle
+---
 
-Libraries: pandas, numpy, matplotlib, surprise, seaborn, streamlit, etc.
+## Credits
+Dataset: Anime Recommendation Database – Kaggle
+
+Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, surprise, streamlit, ipywidgets
 
 Creator: Guduru Manasa
 
-📄 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+
