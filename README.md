@@ -2,7 +2,6 @@
 
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
 ![Status](https://img.shields.io/badge/status-active-success)
-![License](https://img.shields.io/github/license/Anderoids/anime_recommendation_system?color=blue)
 
 > A hybrid anime recommender using Content-Based and Collaborative Filtering in Python.
 
@@ -14,10 +13,7 @@
 - [🚀 Features](#features)
 - [🛠️ Installation](#installation)
 - [▶️ How to Run](#how-to-run)
-- [📊 Visualizations](#visualizations)
 - [📜 Credits](#credits)
-- [📄 License](#license)
-- [💌 Contact](#contact)
 
 ---
 
@@ -64,12 +60,10 @@ Install required packages:
 pip install -r requirements.txt
 
 ---
+## 📜 Credits
 
-## Credits
-Dataset: Anime Recommendation Database – Kaggle
-
-Libraries: pandas, numpy, matplotlib, seaborn, scikit-learn, surprise, streamlit, ipywidgets
-
-Creator: Guduru Manasa
+- **Dataset**: [Anime Recommendation Database – Kaggle](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)
+- **Libraries**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `surprise`, `streamlit`, `ipywidgets`
+- **Creator**: Guduru Manasa
 
 
