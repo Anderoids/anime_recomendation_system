@@ -9,11 +9,11 @@
 
 ## 📌 Table of Contents
 
-- [📂 Dataset](#dataset)
-- [🚀 Features](#features)
-- [🛠️ Installation](#installation)
-- [▶️ How to Run](#how-to-run)
-- [📜 Credits](#credits)
+- 📂 Dataset
+- 🚀 Features
+- - 📜 Credits
+- 🛠️ Installation
+
 
 ---
 
@@ -51,6 +51,13 @@ We use the **Anime Recommendation Database** from [MyAnimeList on Kaggle](https:
 - Interactive recommendation widgets in Jupyter
 
 ---
+## 📜 Credits
+
+- **Dataset**: [Anime Recommendation Database – Kaggle](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)
+- **Libraries**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `surprise`, `streamlit`, `ipywidgets`
+
+---
+
 
 ## 🛠️ Installation
 
@@ -60,10 +67,5 @@ Install required packages:
 pip install -r requirements.txt
 
 ---
-## 📜 Credits
-
-- **Dataset**: [Anime Recommendation Database – Kaggle](https://www.kaggle.com/datasets/CooperUnion/anime-recommendations-database)
-- **Libraries**: `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`, `surprise`, `streamlit`, `ipywidgets`
-- **Creator**: Guduru Manasa
 
 
