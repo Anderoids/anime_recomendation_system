@@ -1,8 +1,5 @@
 # 🎌 Anime Recommendation System in Python 
 
-![Stars](https://img.shields.io/github/stars/Anderoids/anime-recommendation-system?style=social)
-![Forks](https://img.shields.io/github/forks/Anderoids/anime-recommendation-system?style=social)
-![License](https://img.shields.io/github/license/Anderoids/anime-recommendation-system?color=blue)
 ![Python](https://img.shields.io/badge/python-3.9%2B-blue.svg)
 ![Status](https://img.shields.io/badge/status-active-success)
 
@@ -68,12 +65,14 @@ We use the **Anime Recommendation Database** (from [MyAnimeList](https://www.kag
 
 ```bash
 pip install pandas numpy seaborn matplotlib scikit-learn ipywidgets wordcloud surprise
+---
 
 Credits
 Dataset: Kaggle - Anime Recommendation Database
+---
 
 Libraries: pandas, scikit-learn, surprise, ipywidgets, seaborn, matplotlib, wordcloud
+---
 
-
-License
+## License
 This project is licensed under the MIT License
